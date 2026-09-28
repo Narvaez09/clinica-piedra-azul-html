@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clínica Piedra Azul</title>
+
+    <!-- Bootstrap 5 -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="bg-primary text-white">
+        <div class="container py-3">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-8">
+                    <h1 class="mb-1">
+                        <i class="bi bi-hospital"></i>
+                        Clínica Piedra Azul
+                    </h1>
+
+                    <p class="mb-0">
+                        Cuidamos de tu salud y bienestar
+                    </p>
+                </div>
+
+                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-facebook fs-4"></i>
+                    </a>
+
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-instagram fs-4"></i>
+                    </a>
+
+                    <a href="#" class="text-white">
+                        <i class="bi bi-whatsapp fs-4"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                Piedra Azul
+            </a>
+
+            <!-- Botón hamburguesa -->
+            <button 
+                class="navbar-toggler" 
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Mostrar navegación">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Menú -->
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#medicos">
+                            Médicos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#registro">
+                            Registro
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">
+                            Productos
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= SECCIÓN 1 ================= -->
+
+    <section id="inicio" class="container my-4">
+
+        <h2 class="text-center mb-4">
+            Promociones de la Clínica
+        </h2>
+
+        <div id="carouselPromociones" 
+             class="carousel slide"
+             data-bs-ride="carousel">
+
+            <!-- Indicadores -->
+
+            <div class="carousel-indicators">
+
+                <button type="button"
+                        data-bs-target="#carouselPromociones"
+                        data-bs-slide-to="0"
+                        class="active">
+                </button>
+
+                <button type="button"
+                        data-bs-target="#carouselPromociones"
+                        data-bs-slide-to="1">
+                </button>
+
+                <button type="button"
+                        data-bs-target="#carouselPromociones"
+                        data-bs-slide-to="2">
+                </button>
+
+            </div>
+
+            <!-- Imágenes -->
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="img//promociones/promocion1.jpg"
+                         class="d-block w-100 img-fluid"
+                         alt="Promoción de consulta médica">
+
+                    <div class="carousel-caption">
+                        <h3>Consulta médica</h3>
+                        <p>Cuida tu salud con nuestros especialistas.</p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <img src="img//promociones/promocion2.jpg"
+                         class="d-block w-100 img-fluid"
+                         alt="Promoción de fisioterapia">
+
+                    <div class="carousel-caption">
+                        <h3>Fisioterapia</h3>
+                        <p>Recupera tu movilidad y bienestar.</p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <img src="img//promociones/promocion3.jpg"
+                         class="d-block w-100 img-fluid"
+                         alt="Promoción nutricional">
+
+                    <div class="carousel-caption">
+                        <h3>Nutrición</h3>
+                        <p>Una alimentación saludable mejora tu calidad de vida.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Botón anterior -->
+
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselPromociones"
+                    data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+            <!-- Botón siguiente -->
+
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselPromociones"
+                    data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SECCIÓN 2 ================= -->
+
+    <section id="medicos" class="container my-5">
+
+        <h2 class="text-center mb-4">
+            Nuestros Médicos
+        </h2>
+
+        <div class="row">
+
+            <!-- SIDEBAR -->
+
+            <aside class="col-12 col-sm-2 col-md-4 mb-4">
+
+                <div class="card">
+
+                    <div class="card-header">
+                        <strong>Especialidades</strong>
+                    </div>
+
+                    <div class="list-group list-group-flush">
+
+                        <a href="#"
+                           class="list-group-item list-group-item-action"
+                           onclick="mostrarEspecialidad('Terapia Neural')">
+                            Terapia Neural
+                        </a>
+
+                        <a href="#"
+                           class="list-group-item list-group-item-action"
+                           onclick="mostrarEspecialidad('Quiropraxia')">
+                            Quiropraxia
+                        </a>
+
+                        <a href="#"
+                           class="list-group-item list-group-item-action"
+                           onclick="mostrarEspecialidad('Fisioterapia')">
+                            Fisioterapia
+                        </a>
+
+                        <a href="#"
+                           class="list-group-item list-group-item-action"
+                           onclick="mostrarEspecialidad('Nutrición y Dietética Terapéutica')">
+                            Nutrición y Dietética
+                        </a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action"
+                            onclick="mostrarEspecialidad('Acupuntura')">
+                                Acupuntura
+                        </a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action"
+                            onclick="mostrarEspecialidad('Medicina Integrativa')">
+                                Medicina Integrativa
+                        </a>
+
+                        <a href="#"
+                            class="list-group-item list-group-item-action"
+                            onclick="mostrarEspecialidad('Rehabilitación Física')">
+                                Rehabilitación Física
+                        </a>    
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <p id="descripcionEspecialidad" class="small text-muted">
+                            Selecciona una especialidad para conocer su descripción.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+
+            <!-- MÉDICOS -->
+
+            <div class="col-12 col-sm-10 col-md-8">
+
+                <div class="row g-3">
+
+                    <!-- MÉDICO 1 -->
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                        <div class="card h-100 border">
+
+                            <img src="img//medicos/medico1.jpg"
+                                 class="card-img-top img-fluid"
+                                 alt="Médico">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Dr. Juan Pérez
+                                </h5>
+
+                                <p class="card-text">
+                                    Especialista en Fisioterapia Deportiva.
+                                </p>
+
+                                <p class="small">
+                                    Comprometido con la recuperación y bienestar
+                                    de sus pacientes.
+                                </p>
+
+                                <button class="btn btn-primary">
+                                    Agendar cita
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MÉDICO 2 -->
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                        <div class="card h-100 border">
+
+                            <img src="img//medicos/medico2.jpg"
+                                 class="card-img-top img-fluid"
+                                 alt="Médico">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Dra. Catalina Sánchez
+                                </h5>
+
+                                <p class="card-text">
+                                    Especialista en Quiropraxia.
+                                </p>
+
+                                <p class="small">
+                                    Su objetivo es ayudar a sus pacientes
+                                    a alcanzar una vida saludable.
+                                </p>
+
+                                <button class="btn btn-primary">
+                                    Agendar cita
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MÉDICO 3 -->
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                        <div class="card h-100 border">
+
+                            <img src="img//medicos/medico3.jpg"
+                                 class="card-img-top img-fluid"
+                                 alt="Médico">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Dr. Andrés Cardozo
+                                </h5>
+
+                                <p class="card-text">
+                                    Especialista en Nutrición y Dietética
+                                    Terapéutica.
+                                </p>
+
+                                <p class="small">
+                                    Una alimentación saludable ayuda a mejorar
+                                    la calidad de vida.
+                                </p>
+
+                                <button class="btn btn-primary">
+                                    Agendar cita
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MÉDICO 4 -->
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                        <div class="card h-100 border">
+
+                            <img src="img//medicos/medico4.jpg"
+                                 class="card-img-top img-fluid"
+                                 alt="Médico">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Dra. Laura Gómez
+                                </h5>
+
+                                <p class="card-text">
+                                    Especialista en Terapia Neural.
+                                </p>
+
+                                <p class="small">
+                                    Atención personalizada enfocada en el
+                                    bienestar integral.
+                                </p>
+
+                                <button class="btn btn-primary">
+                                    Agendar cita
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SECCIÓN 3 ================= -->
+
+    <section id="registro" class="container my-5">
+
+        <h2 class="text-center mb-4">
+            Registro de Usuario
+        </h2>
+
+        <p class="lead text-center">
+            Crea tu cuenta para acceder a los servicios de la clínica.
+        </p>
+
+        <form id="formRegistro" novalidate>
+
+            <div class="row">
+
+                <!-- Nombre -->
+
+                <div class="col-md-6 mb-3">
+
+                    <label for="nombre" class="form-label">
+                        Nombre
+                    </label>
+
+                    <input type="text"
+                           class="form-control"
+                           id="nombre"
+                           required>
+
+                    <div class="text-danger" id="errorNombre"></div>
+
+                </div>
+
+
+                <!-- Apellidos -->
+
+                <div class="col-md-6 mb-3">
+
+                    <label for="apellido" class="form-label">
+                        Apellidos
+                    </label>
+
+                    <input type="text"
+                           class="form-control"
+                           id="apellido"
+                           required>
+
+                    <div class="text-danger" id="errorApellido"></div>
+
+                </div>
+
+
+                <!-- Documento -->
+
+                <div class="col-md-6 mb-3">
+
+                    <label for="documento" class="form-label">
+                        Documento
+                    </label>
+
+                    <input type="text"
+                           class="form-control"
+                           id="documento"
+                           required>
+
+                    <div class="text-danger" id="errorDocumento"></div>
+
+                </div>
+
+
+                <!-- Correo -->
+
+                <div class="col-md-6 mb-3">
+
+                    <label for="email" class="form-label">
+                        Correo electrónico
+                    </label>
+
+                    <input type="email"
+                           class="form-control"
+                           id="email"
+                           required>
+
+                    <div class="form-text">
+                        Ejemplo: usuario@gmail.com
+                    </div>
+
+                    <div class="text-danger" id="errorEmail"></div>
+
+                </div>
+
+
+                <!-- Teléfono -->
+
+                <div class="col-md-6 mb-3">
+
+                    <label for="telefono" class="form-label">
+                        Teléfono
+                    </label>
+
+                    <input type="tel"
+                           class="form-control"
+                           id="telefono"
+                           required>
+
+                    <div class="text-danger" id="errorTelefono"></div>
+
+                </div>
+
+
+                <!-- Fecha -->
+
+                <div class="col-md-6 mb-3">
+
+                    <label for="fechaNacimiento" class="form-label">
+                        Fecha de nacimiento
+                    </label>
+
+                    <input type="date"
+                           class="form-control"
+                           id="fechaNacimiento"
+                           required>
+
+                    <div class="text-danger" id="errorFecha"></div>
+
+                </div>
+
+
+                <!-- Contraseña -->
+
+                <div class="col-md-6 mb-3">
+
+                    <label for="password" class="form-label">
+                        Contraseña
+                    </label>
+
+                    <input type="password"
+                           class="form-control"
+                           id="password"
+                           required>
+
+                    <div class="form-text">
+                        Mínimo 6 caracteres.
+                    </div>
+
+                    <div class="text-danger" id="errorPassword"></div>
+
+                </div>
+
+
+                <!-- Confirmar contraseña -->
+
+                <div class="col-md-6 mb-3">
+
+                    <label for="confirmPassword" class="form-label">
+                        Confirmar contraseña
+                    </label>
+
+                    <input type="password"
+                           class="form-control"
+                           id="confirmPassword"
+                           required>
+
+                    <div class="text-danger" id="errorConfirmPassword"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Términos -->
+
+            <div class="form-check form-check-inline mb-3">
+
+                <input class="form-check-input"
+                       type="checkbox"
+                       id="terminos"
+                       required>
+
+                <label class="form-check-label" for="terminos">
+                    Acepto los términos y condiciones.
+                </label>
+
+            </div>
+
+
+            <!-- Botón -->
+
+            <div class="d-flex justify-content-start">
+
+                <button type="submit"
+                        class="btn btn-primary">
+
+                    Registrar
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= SECCIÓN 4 ================= -->
+
+    <section id="productos" class="container my-5">
+
+        <h2 class="text-center mb-4">
+            Productos de la Clínica
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- PRODUCTO 1 -->
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                <div class="card h-100">
+
+                    <img src="img//productos/producto1.jpg"
+                         class="card-img-top img-fluid"
+                         alt="Suplementos">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title mt-3">
+                            Suplementos
+                        </h5>
+
+                        <p class="card-text">
+                            Productos seleccionados para complementar
+                            una alimentación saludable.
+                        </p>
+
+                        <button class="btn btn-primary">
+                            Ver producto
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTO 2 -->
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                <div class="card h-100">
+
+                    <img src="img//productos/producto2.jpg"
+                         class="card-img-top img-fluid"
+                         alt="Productos terapéuticos">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title mt-3">
+                            Productos terapéuticos
+                        </h5>
+
+                        <p class="card-text">
+                            Elementos destinados al cuidado y bienestar.
+                        </p>
+
+                        <button class="btn btn-primary">
+                            Ver producto
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTO 3 -->
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                <div class="card h-100">
+
+                    <img src="img//productos/producto3.jpg"
+                         class="card-img-top img-fluid"
+                         alt="Cuidado personal">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title mt-3">
+                            Cuidado personal
+                        </h5>
+
+                        <p class="card-text">
+                            Productos para mantener hábitos saludables.
+                        </p>
+
+                        <button class="btn btn-primary">
+                            Ver producto
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTO 4 -->
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                <div class="card h-100">
+
+                    <img src="img//productos/producto4.jpg"
+                         class="card-img-top img-fluid"
+                         alt="Kits de bienestar">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title mt-3">
+                            Kits de bienestar
+                        </h5>
+
+                        <p class="card-text">
+                            Kits pensados para el cuidado integral.
+                        </p>
+
+                        <button class="btn btn-primary">
+                            Ver producto
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+   <footer class="bg-dark text-white mt-5">
+
+    <div class="container py-4">
+
+        <div class="row align-items-center">
+
+            <!-- Información de la clínica -->
+            <div class="col-12 col-md-6 text-center text-md-start">
+
+                <h5>
+                    <i class="bi bi-hospital"></i>
+                    Clínica Piedra Azul
+                </h5>
+
+                <p class="mb-1">
+                    Tu salud es nuestra prioridad.
+                </p>
+
+                <p class="mb-0">
+                    Atención integral para mejorar tu calidad de vida.
+                </p>
+
+            </div>
+
+
+            <!-- Redes sociales -->
+            <div class="col-12 col-md-6 text-center text-md-end mt-3 mt-md-0">
+
+                <h5>
+                    Síguenos en nuestras redes
+                </h5>
+
+                <a href="#"
+                   class="text-white me-3"
+                   aria-label="Facebook">
+                    <i class="bi bi-facebook fs-3"></i>
+                </a>
+
+                <a href="#"
+                   class="text-white me-3"
+                   aria-label="Instagram">
+                    <i class="bi bi-instagram fs-3"></i>
+                </a>
+
+                <a href="#"
+                   class="text-white me-3"
+                   aria-label="WhatsApp">
+                    <i class="bi bi-whatsapp fs-3"></i>
+                </a>
+
+                <a href="#"
+                   class="text-white"
+                   aria-label="Twitter">
+                    <i class="bi bi-twitter-x fs-3"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="text-center">
+
+            <p class="mb-0">
+                © 2026 Clínica Piedra Azul. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- JS propio -->
+
+    <script src="js/especialidades.js"></script>
+    <script src="js/validaciones.js"></script>
+    <script src="js/productos.js"></script>
+
+</body>
+
+</html>

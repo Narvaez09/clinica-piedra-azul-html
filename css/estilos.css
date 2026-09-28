@@ -1,0 +1,59 @@
+body {
+    background-color: #f8f9fa;
+}
+
+header {
+    min-height: 120px;
+}
+
+/*.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+} */
+ 
+/* Carrusel de promociones */
+#carouselPromociones {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    background-color: #f8f9fa;
+}
+
+#carouselPromociones .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+#carouselPromociones .carousel-item {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#carouselPromociones .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+footer {
+    min-height: 150px;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
